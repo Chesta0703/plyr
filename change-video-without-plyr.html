@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plyr.io YouTube Embeded Video Player</title>
+    <!-- Docs styles -->
+</head>
+<body>
+<iframe id="ytVideo" width="560" height="315" src="https://www.youtube.com/embed/eDkpVwrhYfo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<br>
+<button id="change-video">Change Video</button>
+
+</body>
+<script type="text/javascript">
+  
+document.getElementById("change-video").onclick = function() {
+    document.getElementById('ytVideo').src = "https://www.youtube.com/embed/bo2KQer1KNM";
+};
+
+</script>
+</html>

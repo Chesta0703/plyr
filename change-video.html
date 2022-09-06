@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plyr.io YouTube Embeded Video Player</title>
+    <!-- Docs styles -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/demo.css" />
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <!-- <label for="link">Link</label><br>
+            <input type="url" id="link" ><br> -->
+            <button id="change-video">Change video</button>
+    </div>
+    <div style="width: 500px;" class="player" id="player">
+        <iframe id = "ytVideo" src="https://www.youtube.com/embed/bTqVqk7FSmY" allowfullscreen
+            allowtransparency
+            allow="autoplay">
+        </iframe>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.6.3/demo.js"></script>
+    <!-- <script type="text/javascript">
+        load:function play() {
+            var link1 = document.getElementById('link').value;
+            console.log(link1);
+            var player = document.getElementById("player");
+            player.src = `"${link1}"`;
+    </script> -->
+    
+    <script type="text/javascript">
+  
+        document.getElementById("change-video").onclick = function() {
+            document.getElementById('ytVideo').src = "https://www.youtube.com/embed/bo2KQer1KNM";
+        };
+        
+        </script>
+
+</body>
+
+</html>
